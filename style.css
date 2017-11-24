@@ -1,0 +1,43 @@
+body {
+  background-color: #FE2E2E;
+  animation: container 15s infinite;
+}
+
+/*background animation*/
+@keyframes container {
+  0% {background-color: #FE2E2E;}
+  20% {background-color: #FE9A2E;}
+  40% {background-color: #F7FE2E;}
+  60% {background-color: #2EFE2E;}
+  80% {background-color: #642EFE;}
+  100% {background-color: #FE2E64;}
+}
+
+img {
+  position: relative;
+  padding-top: 30px;
+  animation: nyan 3s linear infinite;
+}
+
+@keyframes nyan {
+  0% {left: -30%;}
+  100% {left: 100%;}
+}
+
+p {
+  font-weight: bold;
+  font-size: 300%;
+  text-align: center;
+  animation: text 2s infinite;
+  margin: auto;
+}
+
+@keyframes text {
+  0% {color: #FA5858;}
+  50% {color: ##2EFE9A;}
+  100% {color: #FE2EC8;}
+}
+
+audio {
+  visibility: hidden;   
+}
