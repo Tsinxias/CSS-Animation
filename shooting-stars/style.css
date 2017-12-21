@@ -1,0 +1,58 @@
+body {
+  background-image: url("stars.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+img {
+  position: absolute;
+  animation: guy 1s linear 0s infinite alternate,
+  retour 2s linear 0s infinite alternate;
+  animation-delay: 7.2s;
+}
+
+.hidden {
+  position: absolute;
+  animation: guy 1.5s linear 0s infinite alternate,
+  retour 1s linear 0s infinite alternate;
+  animation-delay: 15s;
+}
+
+.again {
+  position: absolute;
+  animation: again 1s linear 0s infinite alternate,
+  trop 1s linear 0s infinite alternate;
+  animation-delay: 24.65s;
+}
+
+@keyframes guy {
+  0%,100% {left:0;}
+  50% {
+    left:calc(100vw - 250px);
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes retour {
+  0%,100% {top:0;}
+  50% {top:calc(100vh - 300px);}
+}
+
+audio {
+  visibility: hidden;
+}
+
+@keyframes again {
+  0%,100% {left:0;}
+  50% {
+    left:calc(100vw - 250px);
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes trop {
+  0%,100% {top:0;}
+  50% {top:calc(50vh - 300px);}
+}
